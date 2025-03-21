@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>effective-engine</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-webapp-maven-plugin</artifactId>
+                <version>1.16.1</version>
+                <configuration>
+                    <schemaVersion>v2</schemaVersion>
+                    <subscriptionId>91cc1fb6-1275-4acf-b3ea-c213ec16257b</subscriptionId>
+                    <resourceGroup>Web-App-Practice</resourceGroup>
+                    <appName>Yashvardhan</appName>
+                    <region>Australia Central</region>
+                    <runtime>
+                        <os>Linux</os>
+                        <javaVersion>Java 8</javaVersion>
+                        <webContainer>Tomcat 9.0</webContainer>
+                    </runtime>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
